@@ -2,7 +2,6 @@
 
 cd $HOME/Documents/projects/swww_manager/
 
-
 case $1 in 
     -s|--space) python main.py -d space;;
     -f|--forest) python main.py -d forest;;
