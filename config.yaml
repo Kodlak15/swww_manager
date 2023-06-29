@@ -1,2 +1,9 @@
-directory: ./images
-index: 0
+current:
+  directory: ./images/forest
+  index: 1
+mappings:
+  forest: f
+  images: null
+  mountains: m
+  ocean: o
+  space: s
