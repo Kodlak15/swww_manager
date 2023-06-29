@@ -35,6 +35,9 @@ Instructions:
     .
     .
   ```
+- Make main.py executable: `chmod +x main.py`
+- Assuming your PATH variable is properly configured, you should be able to change your wallpaper with `swww_manager.py`
+  - To use a particular directory, use `swww_manager.py -d your_directory_name`
 
 # TODO:
 
