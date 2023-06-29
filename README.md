@@ -1,5 +1,3 @@
-A simple wallpaper manager for wayland utilizing [swww](https://github.com/Horus645/swww).
-
 Dependencies/prerequisites:
 
 - A Linux environment using the Wayland display protocol
