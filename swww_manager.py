@@ -5,6 +5,10 @@ from utils.getters import get_config, get_parser, get_images, get_num_images, ge
 from utils.setters import set_config, set_wallpaper
 
 if __name__ == "__main__":
+    # Set working directory
+    root_dir = os.path.dirname(os.path.abspath(__file__))
+    os.chdir(root_dir)
+
     # Get the configuration
     try:
         config = get_config()
@@ -33,7 +37,7 @@ if __name__ == "__main__":
     if directory == config["directory"]:
         n = get_num_images(directory)
         assert n > 0, f"No images found in directory: {directory}"
-        config["index"] = (config["current"]["index"] + 1) % n
+        config["index"] = (config["index"] + 1) % n
     else:
         config["directory"] = directory 
         config["index"] = 0 
