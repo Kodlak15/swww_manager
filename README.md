@@ -20,6 +20,7 @@ Instructions:
 - Add images you want to use to the images directory
   - Images can be placed in categorized subfolders
   - Example structure:
+  ```
     tree ./images
     ├── forest
     │   ├── forest1.jpg
@@ -35,6 +36,7 @@ Instructions:
     │   └── ocean3.jpg
     .
     .
+  ```
 
 # TODO:
 
