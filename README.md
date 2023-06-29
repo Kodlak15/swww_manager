@@ -20,21 +20,21 @@ Instructions:
 - Add images you want to use to the images directory
   - Images can be placed in categorized subfolders
   - Example structure:
-    `tree ./images
-├── forest
-│   ├── forest1.jpg
-│   ├── forest2.jpg
-│   └── forest3.jpg
-├── mountains
-│   ├── mountains1.jpg
-│   ├── mountains2.jpg
-│   └── mountains3.jpg
-├── ocean
-│   ├── ocean1.jpg
-│   ├── ocean2.jpg
-│   └── ocean3.jpg
-.
-.`
+    tree ./images
+    ├── forest
+    │   ├── forest1.jpg
+    │   ├── forest2.jpg
+    │   └── forest3.jpg
+    ├── mountains
+    │   ├── mountains1.jpg
+    │   ├── mountains2.jpg
+    │   └── mountains3.jpg
+    ├── ocean
+    │   ├── ocean1.jpg
+    │   ├── ocean2.jpg
+    │   └── ocean3.jpg
+    .
+    .
 
 # TODO:
 
