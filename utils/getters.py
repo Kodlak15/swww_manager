@@ -15,6 +15,9 @@ def get_config() -> Dict:
 def get_parser() -> ArgumentParser:
     parser = ArgumentParser()
     parser.add_argument("-d", "--directory")
+    ### TODO
+    parser.add_argument("-p", "--previous", action="store", nargs="*")
+    ###
     return parser
 
 def get_directories() -> List:

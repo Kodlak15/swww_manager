@@ -1,2 +1,3 @@
-directory: ./images/ocean
-index: 0
+directory: ./images/mountains
+img: mountains5.jpg
+index: 4

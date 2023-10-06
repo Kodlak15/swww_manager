@@ -13,7 +13,8 @@ if __name__ == "__main__":
     try:
         config = get_config()
     except:
-        config = {"directory": "./images/", "index": -1}
+        # config = {"directory": "./images/", "index": -1}
+        config = {"directory": "./images/", "index": -1, "img": ""}
 
     # Get the program arguments
     parser = get_parser()
@@ -37,10 +38,18 @@ if __name__ == "__main__":
     if directory == config["directory"]:
         n = get_num_images(directory)
         assert n > 0, f"No images found in directory: {directory}"
-        config["index"] = (config["index"] + 1) % n
+        ### TODO (this is jank)
+        if args.previous == []:
+            index = (config["index"] - 1) % n
+        else:
+            index = (config["index"] + 1) % n
+        ###
+        config["index"] = index
+        config["img"] = os.listdir(directory)[index]
     else:
         config["directory"] = directory 
         config["index"] = 0 
+        config["img"] = os.listdir(directory)[0]
 
     # Set the updated configuration
     set_config(config)
